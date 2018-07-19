@@ -18,10 +18,10 @@ $mail->Port = '465';
 $mail->isHTML();
 $mail->Username = 'Correo';
 $mail->Password = 'Contraseña';
-$mail->SetFrom('diegoharamvazquezsolis@gmail.com');
+$mail->SetFrom('Correo');
 $mail->Subject = 'Mensaje de: '.$nombre;
 $mail->Body = $mensaje."<br/> <h1>Contacto :".$direccion."</h1>";
-$mail->AddAddress('diegoharamvazquezsolis@gmail.com');
+$mail->AddAddress('Correo');
 $mail->Send();
 header("location: ../thanks.html");
 ?>
